@@ -2,7 +2,6 @@ body {
     background: linear-gradient(90deg, #F0F0F018.16%, #DEDEDE81.84%);
 }
 .navbar {
-    background-color: white;
     border-bottom: 1px solid #e0e0e0;
 }
 .navbar-brand {
@@ -15,18 +14,17 @@ body {
 .nav-link.active {
     font-weight: bold;
 }
-.search-bar {
-    max-width: 400px;
-    margin: 20px auto;
-}
 
 .btn-primary{
     background-color: #8B4513;
-    border-color: #8B4513;
 }
 #header{
     background: linear-gradient(90deg, #F0F0F018.16%, #DEDEDE81.84%);
 }
 #navbarNav{
-    margin-left: 91px;
+    margin-left: 90px;
+}
+
+.top-margin{
+    margin-top: 150px;
 }
