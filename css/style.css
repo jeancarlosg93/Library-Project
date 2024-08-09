@@ -1,0 +1,30 @@
+body {
+    background: linear-gradient(90deg, #F0F0F018.16%, #DEDEDE81.84%);
+}
+.navbar {
+    border-bottom: 1px solid #e0e0e0;
+}
+.navbar-brand {
+    color: #8B4513 !important;
+    font-weight: bold;
+}
+.nav-link {
+    color: #FD9843 !important;
+}
+.nav-link.active {
+    font-weight: bold;
+}
+
+.btn-primary{
+    background-color: #8B4513;
+}
+#header{
+    background: linear-gradient(90deg, #F0F0F018.16%, #DEDEDE81.84%);
+}
+#navbarNav{
+    margin-left: 90px;
+}
+
+.top-margin{
+    margin-top: 150px;
+}
