@@ -25,3 +25,8 @@ body {
 .top-margin{
     margin-top: 150px;
 }
+
+.card-img-top{
+    height: 350px;
+    object-fit: cover;
+}
