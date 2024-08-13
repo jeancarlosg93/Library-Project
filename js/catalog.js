@@ -71,10 +71,10 @@ class BookList {
 }
 
 function generateBookCards() {
-  const bookList = new BookList();
-  const cardContainer = document.getElementById("bookCards");
+  const lista = new BookList();
+  const cardlist = document.getElementById("bookCards");
 
-  bookList.getBooks().forEach((book) => {
+  lista.getBooks().forEach((book) => {
     const cardHtml = `
                     <div class="col">
                         <div class="card h-100">
@@ -83,22 +83,17 @@ function generateBookCards() {
                                 <small class="text-muted">${book.isbn}</small>
                                 <h5 class="card-title">${book.title}</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">${book.author} | ${book.year}</h6>
-                                
                                 <p class="card-text">${book.description}</p>
                                 <a href="#" class="btn btn-primary mt-auto">Reserve</a>
                             </div>
                         </div>
                     </div>
                 `;
-    cardContainer.innerHTML += cardHtml;
+    cardlist.innerHTML += cardHtml;
   });
 }
 
-// Call the function when the page loads
-//window.onload = generateBookCards;
-document.addEventListener("DOMContentLoaded", function () {
-  var catalog = document.getElementById("catalog");
-  catalog.addEventListener("click", function () {
-    generateBookCards();
-  });
+let catalog = document.getElementById("catalog");
+catalog.addEventListener("click", function () {
+  generateBookCards();
 });

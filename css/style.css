@@ -26,9 +26,11 @@ body {
 }
 #header{
     background: linear-gradient(90deg, #9b9b9b .100%, rgba(222, 222, 222, 0.55) .100%);
+    backdrop-filter: blur(20px);
+}
+#headerboottom {
 
 }
-
 
 .top-margin{
     margin-top: 150px;
