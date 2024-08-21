@@ -72,12 +72,15 @@ class BookList {
 
 function generateBookCards() {
   const lista = new BookList();
-  const cardlist = document.getElementById("bookCards");
-  cardlist.innerHTML = "";
+  const dynamicContent = document.getElementById("dynamicContent");
+  dynamicContent.innerHTML = "";
+  
+  const bookCards = document.createElement("div");
+  bookCards.classList = "row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4";
 
   lista.getBooks().forEach((book) => {
     const cardHtml = `
-                    <div class="col">
+                      <div class="col">
                         <div class="card h-100">
                             <img src="${book.imageUrl}" class="card-img-top" alt="${book.title}">
                             <div class="card-body flex-column d-flex">
@@ -88,10 +91,11 @@ function generateBookCards() {
                                 <a href="#" class="btn btn-primary mt-auto">Reserve</a>
                             </div>
                         </div>
-                    </div>
+                      </div>
                 `;
-    cardlist.innerHTML += cardHtml;
+    bookCards.innerHTML += cardHtml;
   });
+  dynamicContent.appendChild(bookCards);
 }
 
 let catalog = document.getElementById("catalog");
