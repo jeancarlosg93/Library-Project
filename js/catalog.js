@@ -6,7 +6,6 @@ class Book {
     this.year = year;
     this.imageUrl = imageUrl;
     this.description = description;
-    this.price = price;
   }
 }
 
@@ -71,11 +70,19 @@ class BookList {
 }
 
 function generateBookCards() {
-  const lista = new BookList();
-  const cardlist = document.getElementById("bookCards");
-  cardlist.innerHTML = "";
+  const listOfBooks = new BookList();
+  const content = document.getElementById("content");
 
-  lista.getBooks().forEach((book) => {
+  content.innerHTML = ` <div class="container mt-5">
+                        <div id="bookCards" class=" row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                        </div>
+                        </div>`;
+
+
+  const cardList = document.getElementById("bookCards");
+  cardList.innerHTML = "";
+
+  listOfBooks.getBooks().forEach((book) => {
     const cardHtml = `
                     <div class="col">
                         <div class="card h-100">
@@ -90,7 +97,7 @@ function generateBookCards() {
                         </div>
                     </div>
                 `;
-    cardlist.innerHTML += cardHtml;
+    cardList.innerHTML += cardHtml;
   });
 }
 

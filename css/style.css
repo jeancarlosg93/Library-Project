@@ -1,7 +1,11 @@
 body {
     background: linear-gradient(90deg, #F0F0F018.16%, #DEDEDE81.84%);
 }
-.navbar {
+
+.modal-content {
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
     border-bottom: 1px solid #e0e0e0;
 }
 .navbar-brand {
@@ -28,9 +32,8 @@ body {
     background: linear-gradient(90deg, #9b9b9b .100%, rgba(222, 222, 222, 0.55) .100%);
     backdrop-filter: blur(20px);
 }
-#headerboottom {
 
-}
+
 
 .top-margin{
     margin-top: 150px;

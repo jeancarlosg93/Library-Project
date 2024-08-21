@@ -1,60 +1,56 @@
-// Wait for the DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
-  // Get the content div
-  const contentDiv = document.getElementById("content");
+const contentDiv = document.getElementById("content");
+const welcomeSection = document.createElement("section");
 
-  // Create and add a welcome section
-  const welcomeSection = document.createElement("section");
-  welcomeSection.innerHTML = `
-        <h1 class="mt-5">Welcome to Hold My Book</h1>
-        <p class="lead">Your one-stop destination for all your reading needs.</p>
-    `;
-  contentDiv.appendChild(welcomeSection);
-
-  // Create and add a featured books section
-  const featuredBooksSection = document.createElement("section");
-  featuredBooksSection.innerHTML = `
-        <h2 class="mt-4">Featured Books</h2>
-        <div class="row">
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title 1</h5>
-                        <p class="card-text">A brief description of the book goes here.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title 2</h5>
-                        <p class="card-text">Another interesting book description.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title 3</h5>
-                        <p class="card-text">Yet another captivating book summary.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
+welcomeSection.innerHTML = `
+    <div class="container top-margin">
+      <div  class="p-5 mb-4 bg-body-tertiary rounded-3 bg-image"
+  style="
+    color: #ffffff;
+    background-image: url('/images/books.jpeg');
+    filter: brightness(80%);
+    height: 300px;
+  ">
+        <div class="container-fluid py-3 px-3 " style="font-family: literata" >
+            <h1 class="display-2 text-light  text-center text-decoration-underline">Welcome to Our Library</h1>
+            <p class="display-6  text-light text-center ">Discover a world of knowledge and imagination.</p>
+        </div>
+      </div>    
+      
+      <h2 class="mt-4">Categories</h2>
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <div class="card">
+            <img src="/images/Books.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Books</h5>
+                    <p class="card-text">A brief description of the book goes here.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
         </div>
-    `;
-  contentDiv.appendChild(featuredBooksSection);
-
-  // Create and add a call-to-action section
-  const ctaSection = document.createElement("section");
-  ctaSection.innerHTML = `
-        <div class="mt-5 p-4 bg-light rounded">
-            <h3>Join Our Community</h3>
-            <p>Sign up now to get exclusive offers and updates on new releases!</p>
-            <button class="btn btn-success">Sign Up</button>
+        <div class="col-md-4 mb-3">
+            <div class="card">
+            <img src="/images/Journals.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Scientific Journals</h5>
+                    <p class="card-text">Another interesting book description.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
         </div>
-    `;
-  contentDiv.appendChild(ctaSection);
+        <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="/images/Magazines.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Magazines</h5>
+                    <p class="card-text">Yet another captivating book summary.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>`;
+
+    contentDiv.appendChild(welcomeSection);
 });
