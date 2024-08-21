@@ -14,6 +14,7 @@ body {
 }
 .nav-link {
     color: #FD9843 !important;
+    cursor: pointer;
 }
 .nav-link.active {
     font-weight: bold;
@@ -23,6 +24,7 @@ body {
     background-color: #8a4513;
     border-color: #bc8963;
     border-width: thin;
+    cursor: pointer;
 }
 .btn-primary:hover{
     background-color: #47220a;
@@ -34,7 +36,6 @@ body {
 }
 
 
-
 .top-margin{
     margin-top: 150px;
 }
@@ -42,4 +43,116 @@ body {
 .card-img-top{
     height: 350px;
     object-fit: cover;
+}
+
+
+/* Contact page */
+#contactContent {
+    background-image: url(https://img.freepik.com/free-photo/abstract-smooth-orange-background-layout-design-studio-room-web-template-business-report-with-smooth-circle-gradient-color_1258-72612.jpg?w=900&t=st=1724275006~exp=1724275606~hmac=2f53e5af98f89d1c22617036ec22dc64a0198129a055024e105404dc4fad0aa2);
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-title {
+    text-align: center;
+    color: #8B4513;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact-info a {
+    color: #8B4513;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info i {
+    margin-right: 8px;
+    color:#8B4513;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+
+.contact-form-container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-control {
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+
+/* About Us Page */
+.about-section {
+    background-image: url(https://img.freepik.com/free-photo/abstract-smooth-orange-background-layout-design-studio-room-web-template-business-report-with-smooth-circle-gradient-color_1258-72612.jpg?w=900&t=st=1724275006~exp=1724275606~hmac=2f53e5af98f89d1c22617036ec22dc64a0198129a055024e105404dc4fad0aa2);
+    background-size: cover;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.about-section .container {
+    margin-top: 0px !important;
+    margin-bottom: 40px;
+    padding-top: 0;
+}
+
+.about-section h2,
+.about-section h4 {
+    text-align: center;
+    color: #8B4513;
+}
+
+.about-section h2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.about-section h4 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
 }

@@ -4,7 +4,7 @@ function loadAboutPage() {
     content.innerHTML = "";
 
     const aboutHtml = `
-                    <div id="aboutContent" class="content-section">
+                    <div id="aboutContent" class="about-section">
                         <div class="container mt-5">
                             <h2>About Us</h2>
                             <p>Welcome to Hold My Book! We are a small, community-focused library offering a vast collection of books, eBooks, and magazines. Our mission is to provide a welcoming space for readers of all ages to explore new ideas, discover great literature, and connect with fellow book lovers.</p>
