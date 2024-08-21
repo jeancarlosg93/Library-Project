@@ -73,6 +73,7 @@ class BookList {
 function generateBookCards() {
   const lista = new BookList();
   const cardlist = document.getElementById("bookCards");
+  cardlist.innerHTML = "";
 
   lista.getBooks().forEach((book) => {
     const cardHtml = `
