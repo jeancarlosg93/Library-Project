@@ -71,12 +71,12 @@ class BookList {
 
 function generateBookCards() {
   const listOfBooks = new BookList();
-  const content = document.getElementById("content");
+  const content = document.getElementById("dynamicContent");
 
-  content.innerHTML = ` <div class="container mt-5">
+  content.innerHTML = ` 
                         <div id="bookCards" class=" row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                         </div>
-                        </div>`;
+                      `;
 
 
   const cardList = document.getElementById("bookCards");
