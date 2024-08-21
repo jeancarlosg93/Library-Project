@@ -11,15 +11,15 @@ body {
     display: flex;
     flex-direction: row;
     max-width: 500px;
-    /* max-height: 350px; */
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(58, 49, 49, 0.2);
 }
 
-.login-section {
+.login-section,
+.register-section {
     font-size: 12px;
-    width: 65%;
+    width: 60%;
     padding: 25px;
     background: linear-gradient(1deg, #d3d1d0, #fff9f2);
     display: flex;
@@ -32,26 +32,24 @@ body {
     background-color: #b36109;
 }
 
-.title-welcome {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
 .social-icons {
-    margin-bottom: 5px;
+    /* margin-bottom: 10px; */
 }
 
 .social-icons span {
     font-size: 12px;
-    margin: 5px;
+    margin-right: 4px;
     cursor: pointer;
     color: #994C00;
 }
 
+.social-icons span:hover {
+    color: #cb6723;
+}
+
 
 .register-section {
-    width: 50%;
+    width: 40%;
     padding: 20px;
     background: linear-gradient(1deg, #b04818, #fca140);
     color: rgb(57, 52, 52);
@@ -63,8 +61,16 @@ body {
 }
 
 .register-section h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
     font-size: 0.8rem;
     text-decoration: underline;
+}
+
+.title-welcome {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .register-btn {
@@ -75,6 +81,7 @@ body {
     font-size: 15px;
     padding: 7px 15px;
     cursor: pointer;
+    margin-top: 20%;
 }
 
 .register-btn:hover {
@@ -90,4 +97,5 @@ body {
 .btn {
     background-color: #994C00; 
     border: none;
+    margin-left: 32.5%;
 }
