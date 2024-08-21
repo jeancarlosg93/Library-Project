@@ -94,9 +94,12 @@ body {
 .btn {
     background-color: #994C00; 
     border: none;
+}
+
+.book-btn {
     margin-left: 32.5%;
 }
 
 .auth-modal {
-    height: 350px;
+    height: 400px;
 }

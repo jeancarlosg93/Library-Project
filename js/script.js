@@ -25,7 +25,7 @@ welcomeSection.innerHTML = `
                 <div class="card-body">
                     <h5 class="card-title">Books</h5>
                     <p class="card-text">A brief description of the book goes here.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <a href="#" class="btn btn-primary book-btn">Learn More</a>
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@ welcomeSection.innerHTML = `
                 <div class="card-body">
                     <h5 class="card-title">Scientific Journals</h5>
                     <p class="card-text">Another interesting book description.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <a href="#" class="btn btn-primary book-btn">Learn More</a>
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@ welcomeSection.innerHTML = `
                 <div class="card-body">
                     <h5 class="card-title">Magazines</h5>
                     <p class="card-text">Yet another captivating book summary.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <a href="#" class="btn btn-primary book-btn">Learn More</a>
                 </div>
             </div>
         </div>
