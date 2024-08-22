@@ -35,8 +35,7 @@ body {
 #headerBottom{
     background-color: rgba(10, 10, 10, 0.83) !important;
     backdrop-filter: blur(20px);
-
-}
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;}
 
 #hero {
     height: 35rem;
@@ -278,5 +277,35 @@ body {
     flex-direction: row;
     max-width: 500px;
     border-bottom: 1px solid #e0e0e0;
+}
+
+footer {
+    background-color: #f8f9fa;
+    color: #ffede1;
+}
+
+.footer-heading {
+    color: #fff3e1;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #ffe1d1;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #994C00;
+    text-decoration: underline;
+}
+
+footer .social-icons a {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+footer hr {
+    border-top: 1px solid #994C00;
 }
 

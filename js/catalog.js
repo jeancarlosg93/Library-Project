@@ -189,17 +189,15 @@ function generateBookCards() {
 
   content.innerHTML = `
     <div class="container py-3">
-      <div class="container mx-auto my-md-4 mx-auto ">
         <form class="row justify-content-md-center">
-          <div class="col-5">
+          <div class=" col-6 ">
               <div class="input-group ">
-                    <span class="input-group-text rounded-start-pill" id="basic-addon1"><i class="bi bi-search "></i></span>
-            <input class="form-control form-control-lg rounded-pill rounded-start-2" type="text" id="searchInput" placeholder="Search by title, author, or ISBN">
-            </div>
+                    <span class="input-group-text rounded-start-pill shadow-sm" id="basic-addon1"><i class="bi bi-search "></i></span>
+                    <input class="form-control form-control-lg rounded-pill rounded-start-2 shadow-sm" type="text" id="searchInput" placeholder="Search by title, author, or ISBN">
+              </div>
           </div>
         </form>
-      </div>
-      <div id="bookCards" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4"></div>
+     <div id="bookCards" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4"></div>
     </div>
   `;
 
