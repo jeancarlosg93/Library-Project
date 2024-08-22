@@ -257,7 +257,7 @@ function displayBooks(books) {
             <h5 class="card-title">${book.title}</h5>
             <h6 class="card-subtitle mb-2 text-muted">${book.author} | ${book.year}</h6>
             <p class="card-text">${book.description}</p>
-            <a href="#" class="btn btn-primary mt-auto book-btn">Reserve</a>
+            <a href="#" class="btn btn-primary mt-auto">Reserve</a>
           </div>
         </div>
       </div>
