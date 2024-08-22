@@ -1,8 +1,9 @@
 function loadContactPage() {
-    const content = document.getElementById("dynamicContent");
+    const content = document.getElementById("content");
     content.innerHTML = "";
 
     const contactHtml = `
+ <div class="container py-5">
             <div id="contactContent" class="content-section">
                 <div class="container mt-5">
                     <h2 class="contact-title">Contact Us</h2>
@@ -32,6 +33,7 @@ function loadContactPage() {
                             </div>
                         </form>
                     </div>
+                </div>
                 </div>
             </div>  
             `;

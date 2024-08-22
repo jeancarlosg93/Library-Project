@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(90deg, #F0F0F018.16%, #DEDEDE81.84%);
+    background: linear-gradient(90deg, #F0F0F018 .16%, #DEDEDE81 .84%);
 }
 
 .modal-content {
@@ -8,43 +8,55 @@ body {
     max-width: 500px;
     border-bottom: 1px solid #e0e0e0;
 }
+
 .navbar-brand {
     color: #8B4513 !important;
     font-weight: bold;
 }
+
 .nav-link {
     color: #FD9843 !important;
     cursor: pointer;
 }
+
 .nav-link.active {
     font-weight: bold;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #8a4513;
     border-color: #bc8963;
     border-width: thin;
     cursor: pointer;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: #47220a;
     border-color: #47220a;
 }
-#header{
+
+#header {
     background: linear-gradient(90deg, #9b9b9b .100%, rgba(222, 222, 222, 0.55) .100%);
     backdrop-filter: blur(20px);
 }
 
+#hero {
+    width: 100% !important;
+    background-image: url('/images/shelvesblurred.jpeg');
+}
 
-.top-margin{
+#hero::before {
+    color: white;
+}
+
+.top-margin {
     margin-top: 100px;
 }
 
-.card-img-top{
+.card-img-top {
     height: 350px;
     object-fit: cover;
 }
-
 
 
 /* Contact page */
@@ -53,7 +65,7 @@ body {
     background-size: cover;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
@@ -87,7 +99,7 @@ body {
 
 .contact-info i {
     margin-right: 8px;
-    color:#8B4513;
+    color: #8B4513;
 }
 
 .contact-info ul {
@@ -127,12 +139,12 @@ body {
     background-size: cover;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
 .about-section .container {
-    margin-top: 0px !important;
+    margin-top: 0 !important;
     margin-bottom: 40px;
     padding-top: 0;
 }
@@ -159,4 +171,105 @@ body {
     color: #333;
     text-align: center;
     margin-bottom: 20px;
+}
+
+
+/*register*/
+
+.modal-content {
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(58, 49, 49, 0.2);
+}
+
+.login-section, .register-section {
+    font-size: 12px;
+    width: 60%;
+    padding: 25px;
+    background: linear-gradient(1deg, #d3d1d0, #fff9f2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.btn:hover {
+    background-color: #b36109;
+}
+
+.social-icons {
+    /* margin-bottom: 10px; */
+}
+
+.social-icons span {
+    font-size: 12px;
+    margin-right: 4px;
+    cursor: pointer;
+    color: #994C00;
+}
+
+.social-icons span:hover {
+    color: #cb6723;
+}
+
+.register-section {
+    width: 40%;
+    padding: 20px;
+    background: linear-gradient(1deg, #b04818, #fca140);
+    color: rgb(57, 52, 52);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.register-section h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    text-decoration: underline;
+}
+
+.title-welcome {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.register-btn {
+    background-color: white;
+    color: #994C00;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 7px 15px;
+    cursor: pointer;
+    margin-top: 20%;
+}
+
+.register-btn:hover {
+    background-color: #f2f2f2;
+}
+
+.input-group-text {
+    background-color: #c4782b;
+    color: white;
+    border: none;
+}
+
+.btn {
+    background-color: #994C00;
+    border: none;
+}
+
+.book-btn {
+    margin-left: 32.5%;
+}
+
+.auth-modal {
+    height: 400px;
 }

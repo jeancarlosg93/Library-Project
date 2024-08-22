@@ -1,5 +1,5 @@
 class Book {
-  constructor(isbn, title, author, year, imageUrl, description, price) {
+  constructor(isbn, title, author, year, imageUrl, description) {
     this.isbn = isbn;
     this.title = title;
     this.author = author;
@@ -71,10 +71,11 @@ class BookList {
 
 function generateBookCards() {
   const listOfBooks = new BookList();
-  const content = document.getElementById("dynamicContent");
+  const content = document.getElementById("content");
 
-  content.innerHTML = ` 
+  content.innerHTML = ` <div class="container py-5">
                         <div id="bookCards" class=" row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                        </div>
                         </div>
                       `;
 

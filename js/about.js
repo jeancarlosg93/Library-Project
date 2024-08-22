@@ -1,9 +1,10 @@
 
 function loadAboutPage() {
-    const content = document.getElementById("dynamicContent");
+    const content = document.getElementById("content");
     content.innerHTML = "";
 
     const aboutHtml = `
+ <div class="container py-5">
                     <div id="aboutContent" class="about-section">
                         <div class="container mt-5">
                             <h2>About Us</h2>
@@ -12,6 +13,7 @@ function loadAboutPage() {
                             <p>Our dedicated team of librarians and volunteers is passionate about books and committed to making your library experience the best it can be.</p>
                             <h4>Our History</h4>
                             <p>Founded in 2024, Hold My Book is growing significantly thanks for our great community.</p>
+                        </div>
                         </div>
                     </div>
                 `;
