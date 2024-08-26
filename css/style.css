@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: row;
     max-width: 500px;
-    border-bottom: 1px solid #e0e0e0;
+    /* border-bottom: 1px solid #e0e0e0; */
 }
 
 .navbar-brand {
@@ -201,12 +201,12 @@ body {
 }
 
 .social-icons {
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
 }
 
 .social-icons span {
     font-size: 12px;
-    margin-right: 4px;
+    margin-right: 2px;
     cursor: pointer;
     color: #994C00;
 }
