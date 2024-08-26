@@ -2,7 +2,6 @@ body {
     background: linear-gradient(90deg, #F0F0F018 .16%, #DEDEDE81 .84%);
 }
 
-<<<<<<< HEAD
 .modal-content {
     display: flex;
     flex-direction: row;
@@ -10,8 +9,6 @@ body {
     /* border-bottom: 1px solid #e0e0e0; */
 }
 
-=======
->>>>>>> 8b5f0551f35668aac39ca0f769e1120dcc9c1bbc
 .navbar-brand {
     color: #8B4513 !important;
     font-weight: bold;
