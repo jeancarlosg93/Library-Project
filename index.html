@@ -19,27 +19,22 @@
 
 <body>
 
-<div class="fixed-top">
+<div class="fixed-top ">
     <nav id="header" class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#" style="font-family: literata,serif"><i class="fas fa-book"></i> Hold My Book</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto"></ul>
+            <a class="navbar-brand" href="#" style="font-family: literata,serif"><i class="fas fa-book"></i> Hold My
+                Book</a>
+                <ul class="navbar-nav me-auto "></ul>
                 <button id="loginbtn" class="btn btn-primary me-2">Log in</button>
                 <button id="registerbtn" class="btn btn-primary">Register</button>
-            </div>
         </div>
     </nav>
 
-    <nav id="headerBottom" class="navbar navbar-expand-lg bg-dark">
-        <div class="container">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+    <nav id="headerBottom" class="navbar navbar-expand ">
+        <div class="container ">
+                <ul class="navbar-nav shadow-sm">
                     <li class="nav-item">
-                        <a id="homebtn" class="nav-link text-light bg-dark" aria-current="page" href="#">Home</a>
+                        <a id="homebtn" class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a id="catalog" class="nav-link" href="#">Catalog</a>
@@ -51,20 +46,13 @@
                         <a id="contactPage" class="nav-link" aria-disabled="true">Contact</a>
                     </li>
                 </ul>
-            </div>
         </div>
     </nav>
 </div>
 
 <div id="content" class=" top-margin">
-    <div class="container mt-5 top-margin">
-        <div id="dynamicContent">
-            <!-- content goes here--->
-        </div>
-        <!-- <div id="bookCards" class=" row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4"></div> -->
-    </div>
+    <!-- content goes here--->
 </div>
-
 <!-- ---------------- Login/register modal --------------------- -->
 
 <!-- ------------------------ register ------------------------- -->
@@ -160,6 +148,46 @@
     </div>
 </div>
 
+<footer class="mt-5 py-4 bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5 class="footer-heading">Hold My Book</h5>
+                <p>Your trusted companion in the world of literature.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5 class="footer-heading">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Catalog</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="footer-heading">Contact Us</h5>
+                <address>
+                    123 Book Street<br>
+                    Library Town, LT 12345<br>
+                    <a href="tel:+11234567890">(123) 456-7890</a><br>
+                    <a href="mailto:info@holdmybook.com">info@holdmybook.com</a>
+                </address>
+            </div>
+        </div>
+        <hr class="mt-4">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="mb-0">&copy; 2024 Hold My Book. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 
 <!--scripts-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -167,10 +195,9 @@
         crossorigin="anonymous"></script>
 
 <script src="js/script.js"></script>
-<script src="js/catalog.js"></script>
-<!--<script src="js/home.js"></script>-->
 <script src="js/about.js"></script>
 <script src="js/contact.js"></script>
 <script src="js/modal.js"></script>
+<script src="js/catalog.js"></script>
 </body>
 </html>
